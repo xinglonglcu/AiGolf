@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        100%	FF
+        97%	F7
+        95%	F2
+        90%	E6
+        85%	D9
+        80%	CC
+        75%	BF
+        70%	B3
+        65%	A6
+        60%	99
+        55%	8C
+        50%	80
+        45%	73
+        40%	66
+        35%	59
+        30%	4D
+        25%	40
+        20%	33
+        16% 28
+        15%	26
+        10%	1A
+        5%	0D
+        0%	0 -->
+
+    <color name="black_transprent_10">#1A000000</color>
+    <color name="black_transprent_20">#33000000</color>
+    <color name="black_transprent_25">#40000000</color>
+    <color name="black_transprent_30">#4D000000</color>
+    <color name="black_transprent_60">#99000000</color>
+    <color name="black_transprent_50">#80000000</color>
+    <color name="black_transprent_40">#66000000</color>
+    <color name="black_transprent_35">#59000000</color>
+    <color name="black_transprent_70">#B2000000</color>
+    <color name="black_transprent_75">#BF000000</color>
+    <color name="black_transprent_80">#CC000000</color>
+    <color name="black_transprent_90">#E6000000</color>
+
+    <color name="white_90">#e6ffffff</color>
+    <color name="white_85">#d9ffffff</color>
+    <color name="white_80">#ccffffff</color>
+    <color name="white_70">#b3ffffff</color>
+    <color name="white_60">#99ffffff</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="white_40">#66ffffff</color>
+    <color name="white_35">#59ffffff</color>
+    <color name="white_30">#4dffffff</color>
+    <color name="white_25">#40ffffff</color>
+    <color name="white_20">#33ffffff</color>
+    <color name="white_10">#1affffff</color>
+    <color name="white_15">#26ffffff</color>
+    <color name="white_0">#00ffffff</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="c_181818">#181818</color>
+    <color name="c_858585">#858585</color>
+    <color name="c_F82E54">#F82E54</color>
+    <color name="c_FF2755">#FF2755</color>
+    <color name="c_ffffff">#ffffff</color>
+    <color name="c_cccccc">#cccccc</color>
+    <color name="c_e6e6e6">#e6e6e6</color>
+    <color name="c_2A2A2A">#2A2A2A</color>
+    <color name="c_ACACAC">#ACACAC</color>
+    <color name="c_4d4d4d">#4d4d4d</color>
+    <color name="c_6c6c6c">#6c6c6c</color>
+    <color name="c_664b4b4b">#664b4b4b</color>
+    <color name="c_"></color>
+
+</resources>

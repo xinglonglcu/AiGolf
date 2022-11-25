@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_navigation_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_ai_record"
+        android:icon="@drawable/ic_navigation_record"
+        android:title="@string/title_ai_record" />
+
+    <item
+        android:id="@+id/navigation_ai_compare"
+        android:icon="@drawable/ic_navigation_compare"
+        android:title="@string/title_ai_compare" />
+    <item
+        android:id="@+id/navigation_ai_report"
+        android:icon="@drawable/ic_navigation_report"
+        android:title="@string/title_ai_report" />
+    <item
+        android:id="@+id/navigation_personal"
+        android:icon="@drawable/ic_navigation_personal"
+        android:title="@string/title_personal" />
+
+</menu>

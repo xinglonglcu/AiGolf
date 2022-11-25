@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_181818">
+
+    <com.xlong.libui.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@color/transparent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabGravity="center"
+        app:tabIndicator="@drawable/indicator"
+        app:tabIndicatorColor="@color/c_FF2755"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="4dp"
+        app:tabMode="fixed"
+        app:tabPaddingTop="1dp"
+        app:tabRippleColor="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/iv_msg"
+        android:layout_width="25dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="14dp"
+        android:padding="2dp"
+        android:src="@mipmap/ic_message"
+        app:layout_constraintBottom_toBottomOf="@id/tab_layout"
+        app:layout_constraintRight_toLeftOf="@id/iv_scan" />
+
+    <ImageView
+        android:id="@+id/iv_scan"
+        android:layout_width="25dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="14dp"
+        android:padding="2dp"
+        android:src="@mipmap/ic_scan"
+        app:layout_constraintBottom_toBottomOf="@id/tab_layout"
+        app:layout_constraintRight_toLeftOf="@id/iv_search" />
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="25dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="14dp"
+        android:padding="2dp"
+        android:src="@mipmap/ic_search"
+        app:layout_constraintBottom_toBottomOf="@id/tab_layout"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

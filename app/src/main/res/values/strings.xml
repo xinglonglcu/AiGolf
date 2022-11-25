@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">AiGolf</string>
+    <string name="title_home">首页</string>
+    <string name="title_ai_record">AI拍</string>
+    <string name="title_ai_compare">AI对比</string>
+    <string name="title_ai_report">AI报</string>
+    <string name="title_personal">个人中心</string>
+    <string name="video">视频</string>
+    <string name="mine">我的</string>
+    <string name="one_key_login">一键登录，尽情体验AI功能</string>
+    <string name="input_mobile">请输入手机号</string>
+    <string name="get_phone_code">获取短信验证码</string>
+    <string name="auto_regist">未注册的手机号验证通过后将自动注册</string>
+    <string name="other_login">其他登录方式</string>
+    <string name="iagree">我已阅读并同意</string>
+    <string name="protocol">隐私政策和用户服务协议</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="login">登录</string>
+    <string name="resend">重新发送</string>
+    <string name="has_send">已发送至</string>
+    <string name="skip">跳过</string>
+    <string name="add_avatar">添加头像</string>
+    <string name="info_nickname">昵称:</string>
+    <string name="info_identity">身份:</string>
+    <string name="info_gender">性别:</string>
+    <string name="info_age">年龄:</string>
+    <string name="info_des">简介:</string>
+    <string name="info_input_age">请填写年龄</string>
+    <string name="info_input_info">请填写个人简介</string>
+    <string name="info_input_nickname">请填写昵称</string>
+    <string name="info_commit">提交</string>
+    <string name="info_man">男</string>
+    <string name="info_wuman">女</string>
+    <string name="info_soccer">职业球员</string>
+    <string name="info_amateur">业余球员</string>
+    <string name="info_coach">教练</string>
+    <string name="a"></string>
+
+    <string name="pull_to_refresh_swipe_sub_label">精彩马上呈现</string>
+</resources>

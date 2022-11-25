@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black_transprent_70"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="30dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:src="@mipmap/ic_back_w"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="@string/input_code"
+        android:textColor="@color/c_ffffff"
+        android:textSize="23dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white_70"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_input"
+        tools:text="@string/has_send" />
+
+    <LinearLayout
+        android:id="@+id/layout_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone">
+
+        <com.xlong.libui.TDLinearLayout
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            app:td_radius="5dp"
+            app:td_solid_color="@color/c_664b4b4b">
+
+            <EditText
+                android:id="@+id/edt_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:digits="1234567890"
+                android:gravity="center"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textColor="@color/c_ffffff"
+                android:textCursorDrawable="@null"
+                android:textSize="19dp" />
+        </com.xlong.libui.TDLinearLayout>
+
+        <com.xlong.libui.TDLinearLayout
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            app:td_radius="5dp"
+            app:td_solid_color="@color/c_664b4b4b">
+
+            <EditText
+                android:id="@+id/edt_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:digits="1234567890"
+                android:gravity="center"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textColor="@color/c_ffffff"
+                android:textCursorDrawable="@null"
+                android:textSize="19dp" />
+        </com.xlong.libui.TDLinearLayout>
+
+        <com.xlong.libui.TDLinearLayout
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            app:td_radius="5dp"
+            app:td_solid_color="@color/c_664b4b4b">
+
+            <EditText
+                android:id="@+id/edt_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:digits="1234567890"
+                android:gravity="center"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textColor="@color/c_ffffff"
+                android:textCursorDrawable="@null"
+                android:textSize="19dp" />
+        </com.xlong.libui.TDLinearLayout>
+
+        <com.xlong.libui.TDLinearLayout
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            app:td_radius="5dp"
+            app:td_solid_color="@color/c_664b4b4b">
+
+            <EditText
+                android:id="@+id/edt_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:digits="1234567890"
+                android:gravity="center"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textColor="@color/c_ffffff"
+                android:textCursorDrawable="@null"
+                android:textSize="19dp" />
+        </com.xlong.libui.TDLinearLayout>
+
+        <com.xlong.libui.TDLinearLayout
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            app:td_radius="5dp"
+            app:td_solid_color="@color/c_664b4b4b">
+
+            <EditText
+                android:id="@+id/edt_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:digits="1234567890"
+                android:gravity="center"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textColor="@color/c_ffffff"
+                android:textCursorDrawable="@null"
+                android:textSize="19dp" />
+        </com.xlong.libui.TDLinearLayout>
+
+        <com.xlong.libui.TDLinearLayout
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            app:td_radius="5dp"
+            app:td_solid_color="@color/c_664b4b4b">
+
+            <EditText
+                android:id="@+id/edt_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:digits="1234567890"
+                android:gravity="center"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textColor="@color/c_ffffff"
+                android:textCursorDrawable="@null"
+                android:textSize="19dp" />
+        </com.xlong.libui.TDLinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_timing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/resend"
+        android:textColor="@color/white_70"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="@id/layout_edt"
+        app:layout_constraintTop_toBottomOf="@id/layout_edt" />
+
+    <com.xlong.libui.TDTextView
+        android:id="@+id/tv_login"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/c_ffffff"
+        android:textSize="17dp"
+        app:layout_constraintLeft_toLeftOf="@id/layout_edt"
+        app:layout_constraintRight_toRightOf="@id/layout_edt"
+        app:layout_constraintTop_toBottomOf="@id/layout_edt"
+        app:td_radius="5dp"
+        app:td_solid_color="@color/c_F82E54" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

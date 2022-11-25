@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/title_ai_record"
+        android:textAlignment="center"
+        android:textColor="@color/c_F82E54"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.xlong.libui.TDTextView
+            android:id="@+id/tv_login"
+            style="@style/textview"
+            android:layout_marginTop="5dp"
+            android:text="登录"
+            app:td_radius="6dp"
+            app:td_solid_color="#fe4545" />
+
+        <com.xlong.libui.TDTextView
+            android:id="@+id/tv_verify"
+            style="@style/textview"
+            android:layout_marginTop="5dp"
+            android:text="验证码"
+            app:td_radius="6dp"
+            app:td_solid_color="#fe4545" />
+
+        <com.xlong.libui.TDTextView
+            android:id="@+id/tv_user_info"
+            style="@style/textview"
+            android:layout_marginTop="5dp"
+            android:text="完善信息"
+            app:td_radius="6dp"
+            app:td_solid_color="#fe4545" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
