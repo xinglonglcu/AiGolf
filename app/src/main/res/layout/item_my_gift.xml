@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="83dp"
+    android:background="@color/transparent"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp">
+
+    <com.xlong.libui.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:src="@mipmap/default_head"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.xlong.libui.TDLinearLayout
+                android:layout_width="39dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:td_radius="4dp"
+                app:td_stroke="1dp"
+                app:td_stroke_color="@color/c_4e4e4e">
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:src="@mipmap/ic_gift_golf" />
+
+                <TextView
+                    android:id="@+id/tv_golf_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:maxLines="1"
+                    android:text="66"
+                    android:textColor="@color/c_ffffff"
+                    android:textSize="10dp" />
+            </com.xlong.libui.TDLinearLayout>
+
+            <com.xlong.libui.TDLinearLayout
+                android:layout_width="39dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:td_radius="4dp"
+                app:td_stroke="1dp"
+                app:td_stroke_color="@color/c_4e4e4e">
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:src="@mipmap/ic_gift_golden_ball" />
+
+                <TextView
+                    android:id="@+id/tv_golden_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:maxLines="1"
+                    android:text="66"
+                    android:textColor="@color/c_ffffff"
+                    android:textSize="10dp" />
+            </com.xlong.libui.TDLinearLayout>
+
+            <com.xlong.libui.TDLinearLayout
+                android:layout_width="39dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:td_radius="4dp"
+                app:td_stroke="1dp"
+                app:td_stroke_color="@color/c_4e4e4e">
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:src="@mipmap/ic_gift_silver_ball" />
+
+                <TextView
+                    android:id="@+id/tv_silver_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:maxLines="1"
+                    android:text="66"
+                    android:textColor="@color/c_ffffff"
+                    android:textSize="10dp" />
+            </com.xlong.libui.TDLinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.xlong.libui.TDLinearLayout
+                android:layout_width="39dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:td_radius="4dp"
+                app:td_stroke="1dp"
+                app:td_stroke_color="@color/c_4e4e4e">
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:src="@mipmap/ic_gift_iron_pole" />
+
+                <TextView
+                    android:id="@+id/tv_iron_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:maxLines="1"
+                    android:text="66"
+                    android:textColor="@color/c_ffffff"
+                    android:textSize="10dp" />
+            </com.xlong.libui.TDLinearLayout>
+
+            <com.xlong.libui.TDLinearLayout
+                android:layout_width="39dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:td_radius="4dp"
+                app:td_stroke="1dp"
+                app:td_stroke_color="@color/c_4e4e4e">
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:src="@mipmap/ic_gift_wooden_pole" />
+
+                <TextView
+                    android:id="@+id/tv_wooden_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:maxLines="1"
+                    android:text="66"
+                    android:textColor="@color/c_ffffff"
+                    android:textSize="10dp" />
+            </com.xlong.libui.TDLinearLayout>
+
+            <com.xlong.libui.TDLinearLayout
+                android:layout_width="39dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:td_radius="4dp"
+                app:td_stroke="1dp"
+                app:td_stroke_color="@color/c_4e4e4e">
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:src="@mipmap/ic_gift_training" />
+
+                <TextView
+                    android:id="@+id/tv_training"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:maxLines="1"
+                    android:text="66"
+                    android:textColor="@color/c_ffffff"
+                    android:textSize="10dp" />
+            </com.xlong.libui.TDLinearLayout>
+
+            <com.xlong.libui.TDLinearLayout
+                android:layout_width="39dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:td_radius="4dp"
+                app:td_stroke="1dp"
+                app:td_stroke_color="@color/c_4e4e4e">
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:src="@mipmap/ic_gift_ball_ground" />
+
+                <TextView
+                    android:id="@+id/tv_ball_ground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:maxLines="1"
+                    android:text="66"
+                    android:textColor="@color/c_ffffff"
+                    android:textSize="10dp" />
+            </com.xlong.libui.TDLinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.xlong.libui.TDTextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/c_ffffff"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_avatar"
+        app:layout_constraintLeft_toRightOf="@id/iv_avatar"
+        app:layout_constraintRight_toLeftOf="@id/layout_container"
+        app:layout_constraintTop_toTopOf="@id/iv_avatar"
+        tools:text="用户名用户名用户名用户名用户名" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/c_2b2b2b"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

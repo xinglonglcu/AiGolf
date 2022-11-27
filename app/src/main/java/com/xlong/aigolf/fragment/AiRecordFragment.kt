@@ -48,6 +48,15 @@ class AiRecordFragment : BaseFragment() {
             Toast.makeText(getMyActivity(), "tv_pose_lib", Toast.LENGTH_SHORT).show()
             IntentUtils.startPoseLibActivity(getMyActivity())
         }
+
+        tv_my_follow.setOnClickListener {
+            Toast.makeText(getMyActivity(), "tv_my_follow", Toast.LENGTH_SHORT).show()
+            IntentUtils.startMyFollowActivity(getMyActivity())
+        }
+        tv_my_gift.setOnClickListener {
+            Toast.makeText(getMyActivity(), "tv_my_gift", Toast.LENGTH_SHORT).show()
+            IntentUtils.startMyGiftActivity(getMyActivity())
+        }
     }
 
     override fun onDestroyView() {

@@ -7,7 +7,7 @@ package com.xlong.aigolf.utils
 object StringUtils {
     fun convertToWan(num: Int): String {
         if (num > 9999) {
-            return "${num / 10000}.${num % 10000 / 1000}w"
+            return String.format("%.1f", num * 1.0f / 10000)
         }
         return "$num"
     }

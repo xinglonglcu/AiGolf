@@ -1,8 +1,6 @@
 package com.xlong.data.net
 
-import com.xlong.data.model.AccountModel
-import com.xlong.data.model.LutFilterModel
-import com.xlong.data.model.VideoModel
+import com.xlong.data.model.*
 import io.reactivex.Observable
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -27,8 +25,18 @@ interface BasicService {
 
     @GET("${mVersion}mod=gcw_team&ac=check_is_bind")
     fun getMyCollectList(@Query("page") page: Int): Observable<BaseModel<List<VideoModel>>>
+
     @GET("${mVersion}mod=gcw_team&ac=check_is_bind")
     fun getPoseLibList(@Query("page") page: Int): Observable<BaseModel<List<VideoModel>>>
+
+    @GET("${mVersion}mod=gcw_team&ac=check_is_bind")
+    fun getFollowList(@Query("page") page: Int, @Query("key") key: String): Observable<BaseModel<List<FollowModel>>>
+
+    @GET("${mVersion}mod=gcw_team&ac=check_is_bind")
+    fun actionFollow(@Query("suid") suid: String, @Query("follow") follow: Int): Observable<BaseModel<Any>>
+
+    @GET("${mVersion}mod=gcw_team&ac=check_is_bind")
+    fun getMyGift(): Observable<BaseModel<MyGiftModel>>
 
     companion object {
         const val mVersion = "api.php?"

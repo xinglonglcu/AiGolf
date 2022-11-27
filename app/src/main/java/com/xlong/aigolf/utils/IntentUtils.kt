@@ -13,6 +13,8 @@ import com.xlong.aigolf.activity.*
  */
 object IntentUtils {
 
+    const val PERMISSION_REQUEST_CODE = 0x0001
+
     const val INTENT_IMAGE_MEDIA = 200//选择图片
     const val INTENT_CROP_IMAGE = 201//裁剪图片
 
@@ -36,6 +38,14 @@ object IntentUtils {
 
     fun startPoseLibActivity(context: Context) {
         context.startActivity(Intent(context, PoseLibActivity::class.java))
+    }
+
+    fun startMyFollowActivity(context: Context) {
+        context.startActivity(Intent(context, MyFollowActivity::class.java))
+    }
+
+    fun startMyGiftActivity(context: Context) {
+        context.startActivity(Intent(context, MyGiftActivity::class.java))
     }
 
     fun startSystemAlbumActivity(context: Activity) {

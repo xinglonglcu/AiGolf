@@ -57,6 +57,24 @@
     <string name="positive">正面</string>
     <string name="side">侧面</string>
     <string name="input_project">请输入训练项目</string>
+    <string name="my_follow">关注的人</string>
+    <string name="follow">关注</string>
+    <string name="followed">已关注</string>
+    <string name="private_letter">私信</string>
+    <string name="check">查看</string>
+    <string name="search_name">搜索姓名</string>
+    <string name="praise">获赞</string>
+    <string name="gift">礼物</string>
+    <string name="input_info_hint">大家好，让大家更了解你</string>
+    <string name="setting">设置</string>
+    <string name="feedback">用户反馈</string>
+    <string name="business">商务合作</string>
+    <string name="my_gift">收到的礼物</string>
+    <string name="golf_ball">高尔夫球</string>
+    <string name="silver_ball">银球</string>
+    <string name="golden_ball">金球</string>
+    <string name="training_ground">训练场</string>
+    <string name="ball_ground">球场</string>
     <string name="a"></string>
 
     <string name="pull_to_refresh_swipe_sub_label">精彩马上呈现</string>

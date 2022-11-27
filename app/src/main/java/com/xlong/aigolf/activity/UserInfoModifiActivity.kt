@@ -15,6 +15,7 @@ import androidx.core.content.ContextCompat
 import com.xlong.aigolf.BaseActivity
 import com.xlong.aigolf.R
 import com.xlong.aigolf.utils.IntentUtils
+import com.xlong.aigolf.utils.IntentUtils.PERMISSION_REQUEST_CODE
 import com.xlong.aigolf.utils.ScreenUtils
 import com.xlong.libui.TDTextView
 import com.xlong.libui.imagload.ImageLoader
@@ -26,7 +27,6 @@ import kotlinx.android.synthetic.main.activity_userinfo_modify.*
  */
 class UserInfoModifiActivity : BaseActivity() {
 
-    private val PERMISSION_REQUEST_CODE = 0x0001
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_userinfo_modify)

@@ -1,13 +1,11 @@
 package com.xlong.aigolf.fragment
 
-import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.findNavController
-import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.xlong.aigolf.BaseFragment
 import com.xlong.aigolf.R
@@ -122,6 +120,15 @@ class MineFragment : BaseFragment() {
     companion object {
         fun newInstance(): MineFragment {
             return MineFragment()
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (!childFragmentManager.fragments.isNullOrEmpty()) {
+            for (fragment in childFragmentManager.fragments) {
+                fragment.onActivityResult(requestCode, resultCode, data)
+            }
         }
     }
 }

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp">
+
+    <com.xlong.libui.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:src="@mipmap/default_head"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.xlong.libui.TDTextView
+        android:id="@+id/tv_follow"
+        android:layout_width="53dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:text="@string/follow"
+        android:textColor="@color/c_ffffff"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_avatar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_avatar"
+        app:td_radius="4dp"
+        app:td_solid_color="@color/c_2f2f2f" />
+
+    <com.xlong.libui.TDTextView
+        android:id="@+id/tv_check"
+        android:layout_width="53dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text="@string/check"
+        android:textColor="@color/c_ffffff"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_avatar"
+        app:layout_constraintRight_toLeftOf="@id/tv_follow"
+        app:layout_constraintTop_toTopOf="@id/iv_avatar"
+        app:td_radius="4dp"
+        app:td_solid_color="@color/c_2f2f2f" />
+
+    <com.xlong.libui.TDTextView
+        android:id="@+id/tv_private_letter"
+        android:layout_width="53dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text="@string/private_letter"
+        android:textColor="@color/c_ffffff"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_avatar"
+        app:layout_constraintRight_toLeftOf="@id/tv_check"
+        app:layout_constraintTop_toTopOf="@id/iv_avatar"
+        app:td_radius="4dp"
+        app:td_solid_color="@color/c_2f2f2f" />
+
+    <com.xlong.libui.TDTextView
+        android:id="@+id/tv_letter_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:layout_marginRight="-4dp"
+        android:padding="1dp"
+        android:text="66"
+        android:textColor="@color/c_ffffff"
+        android:textSize="9dp"
+        app:layout_constraintRight_toRightOf="@id/tv_private_letter"
+        app:layout_constraintTop_toTopOf="@id/tv_private_letter"
+        app:td_radius="100dp"
+        app:td_solid_color="@color/c_F82E54"
+        app:tv_bold="true" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/c_ffffff"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_avatar"
+        app:layout_constraintLeft_toRightOf="@id/iv_avatar"
+        app:layout_constraintRight_toLeftOf="@id/tv_private_letter"
+        app:layout_constraintTop_toTopOf="@id/iv_avatar"
+        tools:text="用户名" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
