@@ -15,6 +15,7 @@ import androidx.core.content.ContextCompat
 import com.xlong.aigolf.BaseActivity
 import com.xlong.aigolf.R
 import com.xlong.aigolf.utils.IntentUtils
+import com.xlong.aigolf.utils.ScreenUtils
 import com.xlong.libui.TDTextView
 import com.xlong.libui.imagload.ImageLoader
 import kotlinx.android.synthetic.main.activity_userinfo_modify.*
@@ -29,6 +30,7 @@ class UserInfoModifiActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_userinfo_modify)
+        ScreenUtils.setStatusBarColor(this, R.color.c_181818)
         initView()
 
         setViewEnable(tv_man, true)
@@ -151,7 +153,7 @@ class UserInfoModifiActivity : BaseActivity() {
                     }
                     Log.d(TAG, "gallery photo is $path")
                     Log.d(TAG, "gallery uri   is $uri")
-                    IntentUtils.cropImage(this, uri)
+                    IntentUtils.startCropImageActivity(this, uri)
                 } catch (e: Exception) {
                     e.printStackTrace()
                 }

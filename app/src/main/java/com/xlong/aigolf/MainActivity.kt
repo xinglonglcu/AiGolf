@@ -66,4 +66,11 @@ class MainActivity : BaseActivity() {
             return 2
         }
     }
+
+    override fun onBackPressed() {
+        if (mainFragment.onBackPressed()) {
+            return
+        }
+        super.onBackPressed()
+    }
 }

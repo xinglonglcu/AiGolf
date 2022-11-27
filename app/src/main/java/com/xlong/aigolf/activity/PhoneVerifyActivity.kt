@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.xlong.aigolf.BaseActivity
 import com.xlong.aigolf.R
+import com.xlong.aigolf.utils.ScreenUtils
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import kotlinx.android.synthetic.main.activity_phone_verify.*
@@ -23,6 +24,7 @@ class PhoneVerifyActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_phone_verify)
+        ScreenUtils.setStatusBarColor(this, R.color.c_181818)
         val mobile = intent.getStringExtra("mobile")
         if (!mobile.isNullOrEmpty() && mobile.length == 11) {
             tv_phone.text = "${resources.getString(R.string.has_send)} +86 ${mobile.replaceRange(3, 7, "****")}"
@@ -34,7 +36,7 @@ class PhoneVerifyActivity : BaseActivity() {
     private fun initView() {
         tv_login.setOnClickListener {
             if (verifyInput()) {
-
+                Toast.makeText(this, "登录成功", Toast.LENGTH_SHORT).show()
             }
         }
         tv_back.setOnClickListener {

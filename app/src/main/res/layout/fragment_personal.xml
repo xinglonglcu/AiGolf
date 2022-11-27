@@ -16,7 +16,7 @@
         android:textAlignment="center"
         android:textSize="20dp"
         android:textColor="@color/c_F82E54"
-        android:text="@string/title_ai_compare"
+        android:text="@string/title_personal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

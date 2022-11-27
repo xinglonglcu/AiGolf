@@ -20,10 +20,15 @@ interface BasicService {
     fun getRecordFilters(): Observable<BaseModel<List<LutFilterModel>>>
 
     @GET("${mVersion}mod=gcw_team&ac=check_is_bind")
-    fun check():Observable<BaseModel<Object>>
+    fun check(): Observable<BaseModel<Object>>
 
     @GET("${mVersion}mod=gcw_team&ac=check_is_bind")
-    fun getVideoList():Observable<BaseModel<List<VideoModel>>>
+    fun getVideoList(@Query("page") page: Int): Observable<BaseModel<List<VideoModel>>>
+
+    @GET("${mVersion}mod=gcw_team&ac=check_is_bind")
+    fun getMyCollectList(@Query("page") page: Int): Observable<BaseModel<List<VideoModel>>>
+    @GET("${mVersion}mod=gcw_team&ac=check_is_bind")
+    fun getPoseLibList(@Query("page") page: Int): Observable<BaseModel<List<VideoModel>>>
 
     companion object {
         const val mVersion = "api.php?"

@@ -49,6 +49,16 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/NoTitleBar" />
+        <activity
+            android:name=".activity.MyCollectionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar" />
+        <activity
+            android:name=".activity.PoseLibActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar" />
 
     </application>
 

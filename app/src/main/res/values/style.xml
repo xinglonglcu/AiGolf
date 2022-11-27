@@ -13,13 +13,36 @@
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">#00000000</item> <!-- 设置状态栏背景色为透明 -->
+        <item name="android:navigationBarColor">#00000000</item> <!-- 设置导航栏背景色为透明 -->
     </style>
 
     <style name="NoTitleBar" parent="AppBase.Theme">
         <item name="android:windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:windowBackground">@color/white</item>
-
+        <item name="android:windowBackground">@color/transparent</item>
     </style>
+
+    <!-- 姿势库筛选面板 -->
+    <style name="filter_textview">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="td_radius">2dp</item>
+        <item name="td_solid_color">@color/c_f2f2f2</item>
+        <item name="android:textColor">@color/c_757575</item>
+        <item name="android:textSize">14dp</item>
+        <item name="maxLines">1</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
 </resources>

@@ -5,9 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.provider.MediaStore
-import com.xlong.aigolf.activity.LoginActivity
-import com.xlong.aigolf.activity.PhoneVerifyActivity
-import com.xlong.aigolf.activity.UserInfoModifiActivity
+import com.xlong.aigolf.activity.*
 
 /**
  *
@@ -32,6 +30,14 @@ object IntentUtils {
         context.startActivity(Intent(context, UserInfoModifiActivity::class.java))
     }
 
+    fun startMyCollectionActivity(context: Context) {
+        context.startActivity(Intent(context, MyCollectionActivity::class.java))
+    }
+
+    fun startPoseLibActivity(context: Context) {
+        context.startActivity(Intent(context, PoseLibActivity::class.java))
+    }
+
     fun startSystemAlbumActivity(context: Activity) {
         try {
             val uri = MediaStore.Images.Media.INTERNAL_CONTENT_URI
@@ -46,7 +52,7 @@ object IntentUtils {
     /**
      * 裁切图片
      */
-    fun cropImage(activity: Activity, srcUri: Uri) {
+    fun startCropImageActivity(activity: Activity, srcUri: Uri) {
         val intent = Intent("com.android.camera.action.CROP")
         intent.setDataAndType(srcUri, "image/*")
         intent.putExtra("crop", "true")

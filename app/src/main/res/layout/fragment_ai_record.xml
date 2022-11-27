@@ -52,6 +52,22 @@
             app:td_radius="6dp"
             app:td_solid_color="#fe4545" />
 
+        <com.xlong.libui.TDTextView
+            android:id="@+id/tv_my_collect"
+            style="@style/textview"
+            android:layout_marginTop="5dp"
+            android:text="@string/my_collection"
+            app:td_radius="6dp"
+            app:td_solid_color="#fe4545" />
+
+        <com.xlong.libui.TDTextView
+            android:id="@+id/tv_pose_lib"
+            style="@style/textview"
+            android:layout_marginTop="5dp"
+            android:text="@string/pose_lib"
+            app:td_radius="6dp"
+            app:td_solid_color="#fe4545" />
+
     </LinearLayout>
 
 

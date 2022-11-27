@@ -11,6 +11,8 @@ data class VideoModel(var id: String? = null, var vid: String? = null, //视频v
                       var cover: String? = null, //封面
                       var title: String? = null, //标题
                       var playurl: String? = null, //播放地址
+                      var duration: Long = 0L,//视频时长 单位s
+                      var compare_num: Int = 0,//比对次数
                       var is_heart: Int = 0, //是否点赞
                       var heart_num: Int = 0, //点赞数量
                       var is_collect: Int = 0, //是否收藏

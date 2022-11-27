@@ -9,6 +9,7 @@ import androidx.core.widget.addTextChangedListener
 import com.xlong.aigolf.BaseActivity
 import com.xlong.aigolf.R
 import com.xlong.aigolf.utils.IntentUtils
+import com.xlong.aigolf.utils.ScreenUtils
 import kotlinx.android.synthetic.main.activity_login.*
 
 /**
@@ -20,6 +21,7 @@ class LoginActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        ScreenUtils.setStatusBarColor(this, R.color.c_181818)
         initView()
     }
 

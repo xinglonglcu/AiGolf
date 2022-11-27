@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xlong.libui.TDRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    app:td_solid_color="@color/c_ffffff"
+    app:td_topLeftRadius="10dp"
+    app:td_topRightRadius="10dp">
+
+    <com.xlong.libui.TDConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.xlong.libui.TDTextView
+            android:layout_width="29dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:td_radius="100dp"
+            app:td_solid_color="@color/c_e2e2e2" />
+
+        <TextView
+            android:id="@+id/tv_title_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="34dp"
+            android:text="@string/type"
+            android:textColor="@color/c_333333"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/layout_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="17dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_type">
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_type_all"
+                style="@style/filter_textview"
+                android:text="@string/all" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_type_1"
+                style="@style/filter_textview"
+                android:text="@string/info_soccer" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_type_2"
+                style="@style/filter_textview"
+                android:text="@string/info_coach" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_type_3"
+                style="@style/filter_textview"
+                android:text="@string/info_coach"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/c_d9d9d9"
+            app:layout_constraintTop_toBottomOf="@id/layout_type" />
+
+        <TextView
+            android:id="@+id/tv_title_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/info_gender2"
+            android:textColor="@color/c_333333"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line1" />
+
+        <LinearLayout
+            android:id="@+id/layout_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="17dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_gender">
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_gender_all"
+                style="@style/filter_textview"
+                android:text="@string/all" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_gender_1"
+                style="@style/filter_textview"
+                android:text="@string/info_man" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_gender_2"
+                style="@style/filter_textview"
+                android:text="@string/info_wuman" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_gender_3"
+                style="@style/filter_textview"
+                android:text="@string/info_wuman"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/c_d9d9d9"
+            app:layout_constraintTop_toBottomOf="@id/layout_gender" />
+
+
+        <TextView
+            android:id="@+id/tv_title_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/action"
+            android:textColor="@color/c_333333"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line2" />
+
+        <LinearLayout
+            android:id="@+id/layout_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="17dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_action">
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_action_all"
+                style="@style/filter_textview"
+                android:text="@string/all" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_action_1"
+                style="@style/filter_textview"
+                android:text="@string/swing_full" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_action_2"
+                style="@style/filter_textview"
+                android:text="@string/swing_half" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_action_3"
+                style="@style/filter_textview"
+                android:text="@string/swing_small" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/c_d9d9d9"
+            app:layout_constraintTop_toBottomOf="@id/layout_action" />
+
+        <TextView
+            android:id="@+id/tv_title_pole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/ball_club"
+            android:textColor="@color/c_333333"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line3" />
+
+        <LinearLayout
+            android:id="@+id/layout_pole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="17dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_pole">
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_pole_all"
+                style="@style/filter_textview"
+                android:text="@string/all" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_pole_1"
+                style="@style/filter_textview"
+                android:text="@string/wooden_pole" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_pole_2"
+                style="@style/filter_textview"
+                android:text="@string/iron_pole" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_pole_3"
+                style="@style/filter_textview"
+                android:text="@string/push_rod" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/c_d9d9d9"
+            app:layout_constraintTop_toBottomOf="@id/layout_pole" />
+
+        <TextView
+            android:id="@+id/tv_title_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/lever_holder"
+            android:textColor="@color/c_333333"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line4" />
+
+        <LinearLayout
+            android:id="@+id/layout_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="17dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_holder">
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_holder_all"
+                style="@style/filter_textview"
+                android:text="@string/all" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_holder_1"
+                style="@style/filter_textview"
+                android:text="@string/left_hand" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_holder_2"
+                style="@style/filter_textview"
+                android:text="@string/right_hand" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_holder_3"
+                style="@style/filter_textview"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/c_d9d9d9"
+            app:layout_constraintTop_toBottomOf="@id/layout_holder" />
+
+        <TextView
+            android:id="@+id/tv_title_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/direction"
+            android:textColor="@color/c_333333"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line5" />
+
+        <LinearLayout
+            android:id="@+id/layout_direction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="17dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_direction">
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_direction_all"
+                style="@style/filter_textview"
+                android:text="@string/all" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_direction_1"
+                style="@style/filter_textview"
+                android:text="@string/positive" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_direction_2"
+                style="@style/filter_textview"
+                android:text="@string/side" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_direction_3"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/swing_small"
+                android:visibility="invisible"
+                app:td_radius="2dp"
+                app:td_solid_color="@color/c_f2f2f2" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/c_d9d9d9"
+            app:layout_constraintTop_toBottomOf="@id/layout_direction" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="17dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line6">
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/info_cancel"
+                android:textColor="@color/c_F82E54"
+                android:textSize="14dp"
+                app:td_radius="2dp"
+                app:td_stroke="1dp"
+                app:td_stroke_color="@color/c_F82E54"
+                app:tv_bold="true" />
+
+            <View
+                android:layout_width="17dp"
+                android:layout_height="1dp" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/tv_commit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/info_commit"
+                android:textColor="@color/c_ffffff"
+                android:textSize="14dp"
+                app:td_radius="2dp"
+                app:td_solid_color="@color/c_F82E54"
+                app:tv_bold="true" />
+        </LinearLayout>
+    </com.xlong.libui.TDConstraintLayout>
+
+</com.xlong.libui.TDRelativeLayout>
