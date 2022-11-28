@@ -78,7 +78,7 @@
             android:id="@+id/tv_my_gift"
             style="@style/textview"
             android:layout_marginTop="5dp"
-            android:text="@string/my_gift"
+            android:text="@string/receive_gift"
             app:td_radius="6dp"
             app:td_solid_color="#fe4545" />
 

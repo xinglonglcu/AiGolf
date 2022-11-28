@@ -37,7 +37,7 @@
     <string name="info_amateur">业余球员</string>
     <string name="info_coach">教练</string>
     <string name="my_collection">我的收藏</string>
-    <string name="pose_lib">姿势库</string>
+    <string name="pose_lib">姿识库</string>
     <string name="filter">筛选</string>
     <string name="compare_num">%s次比对</string>
     <string name="type">类型</string>
@@ -69,13 +69,19 @@
     <string name="setting">设置</string>
     <string name="feedback">用户反馈</string>
     <string name="business">商务合作</string>
-    <string name="my_gift">收到的礼物</string>
+    <string name="receive_gift">收到的礼物</string>
     <string name="golf_ball">高尔夫球</string>
     <string name="silver_ball">银球</string>
     <string name="golden_ball">金球</string>
     <string name="training_ground">训练场</string>
     <string name="ball_ground">球场</string>
-    <string name="a"></string>
+    <string name="upload_analysis">上传/分析</string>
+    <string name="my_share">我的分享</string>
+    <string name="my_gift">我的礼物</string>
+    <string name="info_video">视频(%s)</string>
+    <string name="info_analysis">AI分析(%s)</string>
+    <string name="info_compare">AI比对(%s)</string>
+    <string name="info_report">AI报告(%s)</string>
 
     <string name="pull_to_refresh_swipe_sub_label">精彩马上呈现</string>
 </resources>

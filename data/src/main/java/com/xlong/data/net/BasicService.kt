@@ -38,6 +38,15 @@ interface BasicService {
     @GET("${mVersion}mod=gcw_team&ac=check_is_bind")
     fun getMyGift(): Observable<BaseModel<MyGiftModel>>
 
+    /**
+     * type: 1-视频，2-AI分析，3-AI对比，4-AI报告
+     */
+    @GET("${mVersion}mod=gcw_team&ac=check_is_bind")
+    fun getMyVideos(@Query("type") type: Int): Observable<BaseModel<List<MyVideoModel>>>
+
+    @GET("${mVersion}mod=gcw_team&ac=check_is_bind")
+    fun getMyInfo(): Observable<BaseModel<MyInfoModel>>
+
     companion object {
         const val mVersion = "api.php?"
     }

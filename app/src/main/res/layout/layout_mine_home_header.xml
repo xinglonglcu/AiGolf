@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.xlong.libui.TDLinearLayout
+        android:id="@+id/layout_record"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="2.5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:circularflow_defaultRadius="10dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/layout_upload"
+        app:layout_constraintTop_toTopOf="parent"
+        app:td_gradient_centerColor="@color/c_F82E54"
+        app:td_gradient_endColor="#530D1A"
+        app:td_gradient_orientation="tl_br"
+        app:td_gradient_startColor="#530D1A"
+        app:td_radius="10dp">
+
+        <ImageView
+            android:layout_width="31dp"
+            android:layout_height="27dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_camera" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="@string/title_ai_record"
+            android:textColor="@color/c_ffffff"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+    </com.xlong.libui.TDLinearLayout>
+
+    <com.xlong.libui.TDLinearLayout
+        android:id="@+id/layout_upload"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_record"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:td_gradient_centerColor="@color/c_F82E54"
+        app:td_gradient_endColor="#530D1A"
+        app:td_gradient_orientation="tl_br"
+        app:td_gradient_startColor="#530D1A"
+        app:td_radius="10dp">
+
+        <ImageView
+            android:layout_width="31dp"
+            android:layout_height="27dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_record_w" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="@string/upload_analysis"
+            android:textColor="@color/c_ffffff"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+    </com.xlong.libui.TDLinearLayout>
+
+    <com.xlong.libui.TDRelativeLayout
+        android:id="@+id/layout_pose"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="2.5dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/layout_collect"
+        app:layout_constraintTop_toBottomOf="@id/layout_record"
+        app:td_radius="10dp"
+        app:td_solid_color="@color/c_2f2f2f">
+
+        <com.xlong.libui.TDRelativeLayout
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            app:td_radius="100dp"
+            app:td_solid_color="@color/c_181818">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_collect" />
+        </com.xlong.libui.TDRelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_pose_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_ffffff"
+                android:textSize="17dp"
+                tools:text="666" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/pose_lib"
+                android:textColor="@color/c_cdcdcd"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+    </com.xlong.libui.TDRelativeLayout>
+
+    <com.xlong.libui.TDRelativeLayout
+        android:id="@+id/layout_collect"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_pose"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_record"
+        app:td_radius="10dp"
+        app:td_solid_color="@color/c_2f2f2f">
+
+
+        <com.xlong.libui.TDRelativeLayout
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            app:td_radius="100dp"
+            app:td_solid_color="@color/c_181818">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_collect" />
+        </com.xlong.libui.TDRelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_collect_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_ffffff"
+                android:textSize="17dp"
+                tools:text="666" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/my_collection"
+                android:textColor="@color/c_cdcdcd"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+    </com.xlong.libui.TDRelativeLayout>
+
+    <com.xlong.libui.TDRelativeLayout
+        android:id="@+id/layout_share"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="2.5dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/layout_gift"
+        app:layout_constraintTop_toBottomOf="@id/layout_pose"
+        app:td_radius="10dp"
+        app:td_solid_color="@color/c_2f2f2f">
+
+        <com.xlong.libui.TDRelativeLayout
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            app:td_radius="100dp"
+            app:td_solid_color="@color/c_181818">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_share" />
+        </com.xlong.libui.TDRelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_share_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_ffffff"
+                android:textSize="17dp"
+                tools:text="666" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/my_share"
+                android:textColor="@color/c_cdcdcd"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+    </com.xlong.libui.TDRelativeLayout>
+
+    <com.xlong.libui.TDRelativeLayout
+        android:id="@+id/layout_gift"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_share"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_collect"
+        app:td_radius="10dp"
+        app:td_solid_color="@color/c_2f2f2f">
+
+
+        <com.xlong.libui.TDRelativeLayout
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            app:td_radius="100dp"
+            app:td_solid_color="@color/c_181818">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_gift" />
+        </com.xlong.libui.TDRelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_gift_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_ffffff"
+                android:textSize="17dp"
+                tools:text="666" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/my_gift"
+                android:textColor="@color/c_cdcdcd"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </com.xlong.libui.TDRelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_share">
+
+        <RelativeLayout
+            android:id="@+id/layout_video"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_videos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/info_video"
+                android:textColor="@color/c_ffffff"
+                android:textStyle="bold" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/indicator_video"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                app:td_radius="100dp"
+                app:td_solid_color="@color/c_F82E54"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_analysis"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_analysis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/info_analysis"
+                android:textColor="@color/c_cdcdcd" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/indicator_analysis"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                app:td_radius="100dp"
+                app:td_solid_color="@color/c_F82E54"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_compare"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_compare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/info_compare"
+                android:textColor="@color/c_cdcdcd" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/indicator_compare"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                app:td_radius="100dp"
+                app:td_solid_color="@color/c_F82E54"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_report"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/info_report"
+                android:textColor="@color/c_cdcdcd" />
+
+            <com.xlong.libui.TDTextView
+                android:id="@+id/indicator_report"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                app:td_radius="100dp"
+                app:td_solid_color="@color/c_F82E54"
+                tools:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/c_2b2b2b"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_tab" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
